@@ -15,7 +15,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-
+//route for form action
 Route::post('/shortenUrl', 'Controller@shortenUrl')->name('shortenUrl');
 
+//route to redirect url
 Route::get('/{code}', 'Controller@toUrl')->name('toUrl');
